@@ -142,3 +142,29 @@ Install a package globally: npm install package -g == yarn global add package
       1. html tags
 
 9. CRA automatically updates the live-server when we make changes!
+10. CRA also will automatically create a production ready build if you just run ``npm run build``
+    1.  Notice our root directory creates a build folder
+    2.  The code in our build folder is all minified
+
+11. CRA uses Babel and Webpack
+    1.  Babel will take the JS files and transpile 
+        1.  For multibrowser support
+    2. Webpack is module bundler
+       1. Notice the build folder
+          1. look how we only have 3 javascript files
+          2. Webpack optimized the code to minify it all
+
+12. Notice our index.html has div with id 'root'
+    1.  This is where our react is injected.
+    2.  If we put code outide of the div, it will wrap around the React code as normal html
+
+13. React and ReactDOM are the two libraries that come pre-installed to  CRA
+    1.  React is the main React library
+        1.  State
+        2.  JSX
+        3.  Components
+        4.  Props
+    2. ReactDOM is another default library in CRA
+       1. Manipulates the DOM like jquery
+       2. ``ReactDOM.render(<App />, document.getElementById('root));``
+       3. This is the "what, and where" part of React

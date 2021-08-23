@@ -620,3 +620,17 @@ npm install gulp --save-dev --save-exact	yarn add gulp --dev --exact
 npm install -g gulp	yarn global add gulp
 npm update	yarn upgrade
 ./node_modules/.bin/gulp	yarn run gulp
+
+
+## Revisting Virtual DOM and Routing
+---
+
+All the components within our Virtual Dom are Children of the Div with the class name "App"
+
+- Updating the DOM is an a slow process
+- React copies the actual DOM and creates a VIRTUAL DOM
+- React will make a copy of the virtualDOM AGAIN whenever the data changes
+
+
+* If you want to see on the page where the content is being updated, Go to RENDERING>PAINT FLASHING inside chrome *
+

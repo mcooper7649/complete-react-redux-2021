@@ -316,6 +316,7 @@ If you are new to the concept of using the map() function we saw in the previous
       5. componentWillReceiveProps
       6. comonentWillUnmount
       7. componentWillUpdate
+      8. 
 
 2. Lets Talk about APIs
    1. Remember when we accessed the data from jsonplaceholder.typicode.com ?
@@ -356,7 +357,7 @@ If you are new to the concept of using the map() function we saw in the previous
                1. search-box-components.jsx
                2. search-box.styles.css
 
-    2. At the end of the day, babel converts it all into a javascript file
+    1. At the end of the day, babel converts it all into a javascript file
 
 6. Back to Monster App
    1. Lets add a card list component

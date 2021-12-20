@@ -648,4 +648,21 @@ All the components within our Virtual Dom are Children of the Div with the class
 5. we can use prevState, prevProps to make sure during our batch processing that react does that we return the exact values of the state we wanted
 6. we can then change this.examplestate to prevState.examplestate
 7. we can use prevProps inside our parent app.js file this.props, inside our constructor.
-8. 
+   
+
+Lifecycle Methods
+--
+
+1. Mounting
+   1. componentDidMount
+   2. componentDidUpdate
+   3. ComponentWillUnmount
+   4. shouldComponentUpdate
+
+
+2. Load order
+   constructor
+   render
+   componentDidMount
+
+3. 

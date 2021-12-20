@@ -635,3 +635,17 @@ All the components within our Virtual Dom are Children of the Div with the class
 
 * If you want to see on the page where the content is being updated, Go to RENDERING>PAINT FLASHING inside chrome *
 
+
+## Asyncronous setState
+---
+
+
+
+1. React will batch process setStates for performance reasons
+2. setState is an asyncronous call, not immediately
+3. if we console log hte state right after setState, it will log the previous state still, because it hasn't been updated
+4. we can add a callback function if we want to immediately use the new state
+5. we can use prevState, prevProps to make sure during our batch processing that react does that we return the exact values of the state we wanted
+6. we can then change this.examplestate to prevState.examplestate
+7. we can use prevProps inside our parent app.js file this.props, inside our constructor.
+8. 

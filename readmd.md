@@ -660,9 +660,29 @@ Lifecycle Methods
    4. shouldComponentUpdate
 
 
-2. Load order
+2. Mounting Phase Load order
    constructor
    render
    componentDidMount
 
-3. 
+3. Updating Phase
+   1. New Props, setState, forecUpdate, can trigger an update
+   2. during the update it will re-render not re-update
+   3. forceUpdate is bad practice and should be avoided
+   4. all children components will get re-rendered when a parent gets updated/re-rendered
+
+4. Unmounting Phase
+   1. componenentWillUnmount is called
+   2. when we want to do anything before we unmount
+   3. this is where we wnat to clean up our component
+
+
+
+## Cloning My Repo
+--
+
+1. Go to github link and copy url
+2. git clone paste url
+3. git remote will show 'origin'
+4. git remote remove origin will remove the origin so we can use our own repo
+5. OR we can fork the project into our repo then clone it into our directory

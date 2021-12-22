@@ -774,3 +774,6 @@ example of dynamic links
 
 3. by wrapping our menuitem withRouter we don't have to pass our props down from parent down into children of children anymore
 
+## need to learn to use react-router-dom v6
+
+1. navigate onlick event in menu-item component is giving issues

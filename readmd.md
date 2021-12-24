@@ -776,4 +776,4 @@ example of dynamic links
 
 ## need to learn to use react-router-dom v6
 
-1. navigate onlick event in menu-item component is giving issues
+1. navigate onlick event in menu-item component is giving issues. Need to figure out how to create withRouter function because it doesn't work in react-router-dom v6
